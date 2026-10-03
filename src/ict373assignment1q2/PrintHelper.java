@@ -4,7 +4,7 @@
  * Student ID: 35849414
  * Date: 04 October 2026
  * File Name: PrintHelper.java
- * Purpose: Provides methods for printing the menu, supplements, customers, and weekly/monthly emails to the console.
+ * Purpose: Provides methods for printing student details, the menu, supplements, customers, and weekly/monthly emails to the console.
  * Assumptions: None
  * Input: None
  * Output: Console text such as the menu, customer/supplement listings, and emails.
@@ -12,12 +12,27 @@
 package ict373assignment1q2;
 
 /**
- * Provides helper methods for printing output to the console.
- * Handles the menu, supplement and customer listings, and weekly/monthly emails.
+ * Provides helper methods for printing output to the console. Handles student
+ * details, the menu, supplement and customer listings, and weekly/monthly emails.
  *
  * @author Liyana Afiqah Binte Jazmi
  */
 public class PrintHelper {
+
+    /**
+     * Prints the student's name, student number, mode of enrolment, tutor,
+     * and tutorial day and time.
+     */
+    public static void displayStudentDetails() {
+        System.out.println("================= STUDENT DETAILS =================");
+        System.out.printf("%-20s %s%n", "Student Name:", "Liyana Afiqah Binte Jazmi");
+        System.out.printf("%-20s %s%n", "Student Number:", "35849414");
+        System.out.printf("%-20s %s%n", "Mode of Enrolment:", "PT");
+        System.out.printf("%-20s %s%n", "Tutor Name:", "Andy Lee");
+        System.out.printf("%-20s %s%n", "Tutorial Day/Time:", "Thursdays, 7 PM");
+        System.out.println("===================================================");
+        System.out.println("");
+    }
 
     /**
      * Prints the header for a given week.
@@ -29,7 +44,8 @@ public class PrintHelper {
     }
 
     /**
-     * Prints the weekly email for a customer, listing their subscribed supplements.
+     * Prints the weekly email for a customer, listing their subscribed
+     * supplements.
      *
      * @param customer the customer to print the email for
      */
@@ -55,8 +71,8 @@ public class PrintHelper {
     }
 
     /**
-     * Prints the monthly billing email for a paying customer.
-     * Shows their own charges and the charges for each of their associate customers.
+     * Prints the monthly billing email for a paying customer. Shows their own
+     * charges and the charges for each of their associate customers.
      *
      * @param customer the paying customer to bill
      * @param magazine the magazine containing the weekly cost
@@ -170,8 +186,8 @@ public class PrintHelper {
     }
 
     /**
-     * Prints details of all customers, including their type, supplements,
-     * and related paying customer or associate customers.
+     * Prints details of all customers, including their type, supplements, and
+     * related paying customer or associate customers.
      *
      * @param magazine the magazine containing the customers
      */

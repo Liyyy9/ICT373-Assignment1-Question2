@@ -26,6 +26,8 @@ public class MagazineService {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
+        PrintHelper.displayStudentDetails();
+
         Magazine magazine = new Magazine();
         Scanner scanner = new Scanner(System.in);
 
